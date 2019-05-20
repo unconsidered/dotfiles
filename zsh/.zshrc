@@ -4,32 +4,14 @@
 # This is a workaround for having a system node and NVM node
 PATH="/usr/local/bin:$(getconf PATH)"
 
-# Path to your oh-my-zsh installation.
-#export ZSH=/Users/${USER}/.oh-my-zsh
+# hist
+setopt hist_ignore_all_dups inc_append_history
+HISTFILE=~/.zhistory
+HISTSIZE=4096
+SAVEHIST=4096
 
+export ERL_AFLAGS="-kernel shell_history enabled"
 
-# Disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# How often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
