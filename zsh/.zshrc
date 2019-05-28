@@ -1,6 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# vi mode
+bindkey -v
+
+# fix backspace in vi mode
+bindkey "^?" backward-delete-char
+
 # This is a workaround for having a system node and NVM node
 PATH="/usr/local/bin:$(getconf PATH)"
 
