@@ -31,7 +31,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Antibody plugin manager
 source <(antibody init)
 antibody bundle denysdovhan/spaceship-prompt
@@ -39,6 +38,9 @@ antibody bundle denysdovhan/spaceship-prompt
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+# SPACESHIP_VI_MODE_SHOW="true"
+SPACESHIP_VI_MODE_COLOR="green"
+spaceship_vi_mode_enable
 
 # Use nvim as the default editor
 export EDITOR=nvim
