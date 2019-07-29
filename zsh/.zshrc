@@ -10,8 +10,6 @@ bindkey -v
 # fix backspace in vi mode
 bindkey "^?" backward-delete-char
 
-# This is a workaround for having a system node and NVM node
-PATH="/usr/local/bin:$(getconf PATH)"
 
 # hist
 setopt hist_ignore_all_dups inc_append_history
