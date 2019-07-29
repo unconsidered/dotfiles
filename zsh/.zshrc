@@ -1,5 +1,8 @@
+# This is a workaround for having a system node and NVM node
+PATH="/usr/local/bin:$(getconf PATH)"
+
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/Library/TeX/texbin:$PATH
 
 # vi mode
 bindkey -v
