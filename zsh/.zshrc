@@ -38,7 +38,6 @@ antibody bundle denysdovhan/spaceship-prompt
 
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
-prompt spaceship
 # SPACESHIP_VI_MODE_SHOW="true"
 SPACESHIP_VI_MODE_COLOR="green"
 spaceship_vi_mode_enable
