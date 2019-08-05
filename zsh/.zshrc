@@ -1,5 +1,5 @@
 # This is a workaround for having a system node and NVM node
-PATH="/usr/local/bin:$(getconf PATH)"
+PATH="/usr/local/bin:/snap/bin:$(getconf PATH)"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/Library/TeX/texbin:$PATH
