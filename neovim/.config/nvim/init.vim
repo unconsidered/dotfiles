@@ -128,7 +128,7 @@ set t_Co=256
 
 " set colorscheme
 colorscheme solarized
-set background=light
+set background=dark
 
 " long lines as just one line (have to scroll horizontally)
 set nowrap
