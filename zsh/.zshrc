@@ -1,6 +1,19 @@
 # This is a workaround for having a system node and NVM node
 PATH="/usr/local/bin:/snap/bin:$(getconf PATH)"
 
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/Library/TeX/texbin:$PATH
 
@@ -26,6 +39,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Load aliases
 if [ -f ~/.aliases ]; then
     . ~/.aliases
+else
+    print "404: ~/.aliases not found."
 fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
