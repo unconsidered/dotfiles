@@ -1,6 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""
-" => General
-"""""""""""""""""""""""""""""""""""""""""""""""
+" => General """""""""""""""""""""""""""""""""""""""""""""""
 
 set encoding=utf-8          " The encoding displayed
 scriptencoding uft-8
@@ -27,6 +26,8 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'Shougo/neocomplete.vim'
 Plug 'prettier/vim-prettier', {'do': 'npm install', 'for': ['javascript', 'typescript', 'less', 'scss'] }
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'psf/black'
+Plug 'tpope/vim-surround'
 " neomake
 Plug 'neomake/neomake'
 " JavaScript Highlight & Improved Indentation
@@ -128,7 +129,7 @@ set t_Co=256
 
 " set colorscheme
 colorscheme solarized
-set background=dark
+set background=light
 
 " long lines as just one line (have to scroll horizontally)
 set nowrap
