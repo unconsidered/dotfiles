@@ -128,3 +128,8 @@
   path = .gitconfig.user
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[user]
+	name = Dan Clendenning
+	email = daniel.clendenning@papayapay.com
+[init]
+	defaultBranch = main
