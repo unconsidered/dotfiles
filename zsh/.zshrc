@@ -51,11 +51,8 @@ export NVM_DIR="$HOME/.nvm"
 source <(antibody init)
 antibody bundle denysdovhan/spaceship-prompt
 
-# Set Spaceship ZSH as a prompt
+# this was part of spaceship, is it still needed?
 autoload -U promptinit; promptinit
-# SPACESHIP_VI_MODE_SHOW="true"
-#SPACESHIP_VI_MODE_COLOR="green"
-#spaceship_vi_mode_enable
 
 # Use nvim as the default editor
 export EDITOR=nvim
