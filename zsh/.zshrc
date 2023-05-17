@@ -54,10 +54,18 @@ antibody bundle denysdovhan/spaceship-prompt
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 # SPACESHIP_VI_MODE_SHOW="true"
-SPACESHIP_VI_MODE_COLOR="green"
-spaceship_vi_mode_enable
+#SPACESHIP_VI_MODE_COLOR="green"
+#spaceship_vi_mode_enable
 
 # Use nvim as the default editor
 export EDITOR=nvim
 set -o vi
 export VISUAL=vim
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+export CONFLUENT_HOME="/Users/drc/confluent/confluent-7.3.2"
+export PATH="$PATH:$CONFLUENT_HOME/bin"
+
+eval "$(starship init zsh)"
