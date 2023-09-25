@@ -46,6 +46,9 @@
   dc = diff --cached                # diff staged changes
   last = diff HEAD^                 # diff last committed change
 
+  # fetch
+  f = fetch --all -p                # fetch all and prune 
+
   # log
   l = log --graph --date=short
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
@@ -55,9 +58,12 @@
 
   # pull
   pl = pull                         # pull
+  puma = pull upstream master     # my most frequent pulls
+  pum = pull upstream main        # my most frequent pulls
 
   # push
   ps = push                         # push
+  psup = push --set-upstream        # push and set upstream
 
   # rebase
   rc = rebase --continue            # continue rebase
