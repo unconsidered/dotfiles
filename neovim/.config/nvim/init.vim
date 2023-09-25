@@ -26,7 +26,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'Shougo/neocomplete.vim'
 Plug 'prettier/vim-prettier', {'do': 'npm install', 'for': ['javascript', 'typescript', 'less', 'scss'] }
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'psf/black'
+" Plug 'psf/black'
 Plug 'tpope/vim-surround'
 " neomake
 Plug 'neomake/neomake'
@@ -43,7 +43,7 @@ Plug 'mattn/emmet-vim'
 " semantic-based completion
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " linting engine
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 
 call plug#end()
 
