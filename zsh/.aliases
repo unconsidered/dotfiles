@@ -2,3 +2,6 @@ alias vi="nvim"
 alias vim="nvim"
 alias g="git"
 alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/snowsql
+alias di='echo dotenv > .envrc && touch .env && direnv allow'
+alias awsBillpay='AWS_PROFILE=billpay-production-developer aws eks --region us-east-1 update-kubeconfig --name cluster'
+alias kubeBillpay='kubectl port-forward -n billpay service/airflow-web 8080'
