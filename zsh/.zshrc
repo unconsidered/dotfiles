@@ -66,3 +66,4 @@ export CONFLUENT_HOME="/Users/drc/confluent/confluent-7.3.2"
 export PATH="$PATH:$CONFLUENT_HOME/bin"
 
 eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
