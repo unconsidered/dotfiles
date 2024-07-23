@@ -18,7 +18,7 @@ set cursorline              " Find the current line quickly.
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
-Plug 'altercation/vim-colors-solarized'
+Plug 'overcache/NeoSolarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'unblevable/quick-scope'
@@ -41,7 +41,7 @@ Plug 'editorconfig/editorconfig-vim'
 " emmet
 Plug 'mattn/emmet-vim'
 " semantic-based completion
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " linting engine
 " Plug 'w0rp/ale'
 
@@ -128,7 +128,7 @@ endif
 set t_Co=256
 
 " set colorscheme
-colorscheme solarized
+colorscheme NeoSolarized
 set background=light
 
 " long lines as just one line (have to scroll horizontally)
