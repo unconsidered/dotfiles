@@ -1,12 +1,4 @@
-background_opacity = 1.0
-cursor_style = "Block"
-custom_cursor_colors = false
-"debug.render_timer" = false
-dynamic_title = true
-hide_cursor_when_typing = false
 live_config_reload = true
-tabspaces = 8
-unfocused_hollow_cursor = true
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -39,9 +31,7 @@ foreground = "0x586e75"
 TERM = "xterm-256color"
 
 [font]
-scale_with_dpi = true
 size = 20.0
-use_thin_strokes = true
 
 [font.bold]
 family = "Inconsolata for Powerline"
@@ -586,23 +576,14 @@ key = "NumpadEnter"
 action = "PasteSelection"
 mouse = "Middle"
 
-[mouse.double_click]
-threshold = 300
-
-[mouse.triple_click]
-threshold = 300
 
 [scrolling]
-auto_scroll = false
 history = 10000
 multiplier = 3
 
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
-[visual_bell]
-animation = "EaseOutExpo"
-duration = 0
 
 [window]
 decorations = "full"
